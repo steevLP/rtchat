@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Simple Chat </title>
+        <link rel="stylesheet" type="text/css" href="/assets/css/main.css">
+        <link rel="stylesheet" type="text/css" href="/assets/css/grid.css">
+        <link rel="stylesheet" type="text/css" href="/assets/css/btn.css">
+        <link rel="stylesheet" type="text/css" href="/assets/css/area.css">
+    </head>
+    <body>
+        <section>
+        <h1 class="centered"> Willkommen, auf der Seite. </h1>
+        <div class="container">
+            <br>
+            <div class="row">
+                <div class="col-6">
+                    <h1 class="centered" id="pChannel"> Public Channel </h1>
+                    <form id="publicForm" action="">
+                        <input id="username" class="input" type="text" placeholder="Username" required>
+                        <br><br>
+                        <button id="submitbutton" class="btn-success"> Login </button>
+                    </form>
+                </div>
+                <div class="col-6">
+                    <h1 class="centered"> Private Channel (WIP)</h1>
+                    <form>
+                        <input class="input" type="text" placeholder="Room Code" required disabled>
+                        <br><br>
+                        <input class="input" type="text" placeholder="Username" required disabled>
+                        <br><br>
+                        <button class="btn-success">Login</button
+                    </form>
+                </div>
+            </div>
+            <br><br><br><br><br>
+            <br><br><br><br><br>
+            <br><br><br><br><br>
+            <section class="area-info">
+                <h1> Updates und News </h1>
+                <ul>
+                    <li class="parent-list">
+                        <h2>Version 1.1.1</h2>
+                        <p>Basierend auf Vorschlägen und aufgetretenen Problemen ist die Version 1.1.0 entstanden und folgende Feature wurden implementiert</p>
+                        <hr class="styled">
+                        <ol style="padding: 0 20px 0 20px;">
+                            <li>Html Filter hinzugefügt</li>
+                            <li>Namens Länge auf 25 Zeichen begrenzt</li>
+                            <li>UI Überarbeitungen</li>
+                        </ol>
+                    </li>
+                    <li class="parent-list">
+                        <h2>Version 1.1.0</h2>
+                        <p>Basierend auf Vorschlägen und aufgetretenen Problemen ist die Version 1.1.0 entstanden und folgende Feature wurden implementiert</p>
+                        <hr class="styled">
+                        <ol style="padding: 0 20px 0 20px;">
+                            <li>Befehle wurden hinzugefügt (/help, /tableflip, /unflip)</li>
+                            <li>Namen sind jetzt Farbig</li>
+                            <li>Überarbeitungen des GUI's</li>
+                            <li>Die Frontpage wurde hinzugefügt</li>
+                            <li>Nachrichten werden nicht mehr unter der eingabeleiste angezeigt</li>
+                        </ol>
+                    </li>
+                </ul>
+            </section>
+            <hr class="styled">
+            <div class="area-warning">
+                <h1> Hinweise zum Datenschutz </h1>
+                <p class="area-text" style="font-family: Arial; font-size: 17px;">
+                Diese Seite speichert temporäre Daten über diese Verbindung. Dabei werden IP-Adresse, Nutzername und Verbindungs-ID gespeichert.
+                <br>
+                Mit betreten der Website, erklärrst du dich damit einverstanden.</p> 
+            </div>
+        </div>
+        </section>
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="/assets/js/jquery.min.js"></script>
+        <script src="/assets/js/globallized/socket.js"></script>
+        <script src="/assets/js/globallized/events.js"></script>
+        <script src="/assets/js/auth.js"></script>
+    </body>
+</html>

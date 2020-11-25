@@ -1,0 +1,20 @@
+.area-info h1{
+    font-size: 25px;
+    border-bottom: 5px solid #4fc7f7;
+}
+.area-info ul{
+    padding: 0 20px 0 20px; 
+    list-style:none; 
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+    font-size: 15px;
+    border: solid 2px rgb(204, 204, 204);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.area-info .parent-list{
+    padding: 10px;
+}
+.area-warning h1{
+    font-size: 25px;
+    border-bottom: 5px solid #f1c40f;
+}

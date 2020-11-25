@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+  <head>
+    <title id="title">Grade Online: 0</title>
+    <style> 
+      * { margin: 0; padding: 0; box-sizing: border-box; } 
+      body { font: 13px Helvetica, Arial; background-color: #2c3e50; } 
+      form { background:#4b6584; padding: 5px; position: fixed; bottom: 0; width: 100%; } 
+      form input { border-radius:5px; background-color: #bdc3c7; border:none; padding: 10px; width: 90%; margin-right: 0.5%; } 
+      form button { width: 9%; font-size: 17px; background: #3498db; color:White; border: none; padding: 10px; border:none; border-radius: 5px;}
+      form button:hover {background-color: #2980b9;} 
+      #messages { list-style-type: none; margin-bottom: 40px; padding: 0;  border: 1px solid black;} 
+      #messages li { padding: 5px 10px; color:white;} </style>
+  </head>
+  <body>
+    <ul id="messages"></ul>
+    <p id="containerStatus" style="color:grey; height:12px; fontsize:12px; margin-right: 300px;"></p>
+    <ul id="userlist" style="position: absolute; right: 0; width: 300px;"></ul>
+    <form action="">
+      <input id="m" autocomplete="off" /><button>Send</button>
+    </form>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/assets/js/jquery.min.js"></script>
+    <script src="/assets/js/globallized/socket.js"></script>
+    <script src="/assets/js/globallized/events.js"></script>
+    <script src="/assets/js/url.handler.js"></script>
+    <script src="/assets/js/client.js"></script>
+  </body>
+</html>
